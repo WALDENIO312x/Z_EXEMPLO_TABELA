@@ -10,3 +10,6 @@ TYPES: BEGIN OF ty_cliente,
          nome TYPE string,
        END OF ty_cliente.
 
+DATA: ls_cliente TYPE ty_cliente,
+      lt_clientes TYPE STANDARD TABLE OF ty_cliente.
+
