@@ -20,3 +20,9 @@ ls_cliente-id = 3.
 ls_cliente-nome = 'Weisdia'.
 INSERT ls_cliente INTO TABLE lt_clientes INDEX 2. " Insere na posição 2
 
+LOOP AT lt_clientes INTO ls_cliente.
+  IF ls_cliente-id = 2.
+    ls_cliente-nome = 'Wandré Clímaco Menezes'.
+    MODIFY lt_clientes FROM ls_cliente. " Modifica o registro    
+  ENDIF.
+ENDLOOP.
