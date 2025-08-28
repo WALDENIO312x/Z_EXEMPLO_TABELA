@@ -26,3 +26,16 @@ LOOP AT lt_clientes INTO ls_cliente.
     MODIFY lt_clientes FROM ls_cliente. " Modifica o registro    
   ENDIF.
 ENDLOOP.
+
+DELETE lt_clientes WHERE id = 1. " Deleta o registro com id 1
+
+LOOP AT lt_clientes INTO DATA ls_cliente.
+    WRITE: / 'ID:', ls_cliente-id, 'Nome:', ls_cliente-nome.
+ENDLOOP.
+
+READ TABLE lt_clientes INTO ls_cliente WITH KEY id = 3.
+IF sy-subrc = 0.
+  WRITE: / 'Registro encontrado - ID:', ls_cliente-id, 'Nome:', ls_cliente-nome.
+ELSE.
+  WRITE: / 'Registro não encontrado'.
+ENDIF. " Lê o registro com id 3
