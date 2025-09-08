@@ -16,3 +16,6 @@ APPEND ls_nome TO lt_nomes.
 ls_nome-nome = 'João'.
 APPEND ls_nome TO lt_nomes.
 
+LOOP AT lt_nomes INTO ls_nome.
+  WRITE: / 'Nome:', ls_nome-nome.
+ENDLOOP.
