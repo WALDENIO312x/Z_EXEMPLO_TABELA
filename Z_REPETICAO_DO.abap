@@ -12,3 +12,9 @@ ENDDO.
 
 SKIP.
 
+* Exemplo usando sy-index
+WRITE: / 'Exemplo do comando DO com sy-index: '.
+
+DO 5 TIMES.
+    WRITE: / 'Repetição (sy-index):', sy-index.
+ENDDO.
