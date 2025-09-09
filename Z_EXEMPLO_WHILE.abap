@@ -12,4 +12,4 @@ WHILE v_num <= 5.
     v_num = v_num + 1.        "Incrementa a variável
 ENDWHILE.
 
-* Ao final, o loop terá exibido os valores de 1
+* Ao final, o loop terá exibido os valores de 1 a 5
