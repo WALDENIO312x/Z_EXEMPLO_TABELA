@@ -20,3 +20,11 @@ DO 10 TIMES.
     WRITE: / 'Somando:', sy-index.
 ENDDO.
 
+" Exibe o total acumulado após o término do loop
+WRITE: / 'Total acumulado:', v_total.
+
+* Explicação:
+* - O loop DO executa 10 vezes, com sy-index variando de 1 a 10.
+* - Quando sy-index chega a 6, o EXIT encerra o loop, então só são processados índices de 1 a 5.
+* - O CONTINUE faz com que os números ímpares sejam ignorados, ou seja, só os pares (2 e 4) são somados.
+* - O resultado final será a soma de 2 + 4 = 6.
