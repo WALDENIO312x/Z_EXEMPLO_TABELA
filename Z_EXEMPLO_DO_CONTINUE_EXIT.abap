@@ -4,27 +4,3 @@ REPORT z_exemplo_do_continue_exit.
 
 DATA: v_total TYPE i. " Variável para acumular o total
 
-DO 10 TIMES.
-    " Se o índice do loop for igual a 6, o comando EXIT encerra o loop imediatamente
-    IF sy-index = 6.
-        EXIT. " Para o loop ao chegar no 6
-    ENDIF.
-
-    " Se o índice do loop for ímpar, o comando CONTINUE pula para a próxima iteração
-    IF sy-index MOD 2 = 1.
-        CONTINUE. " Pula os ímpares
-    ENDIF.
-
-    " Se chegou aqui, o índice é par e menor que 6, então soma ao total
-    v_total = v_total + sy-index.
-    WRITE: / 'Somando:', sy-index.
-ENDDO.
-
-" Exibe o total acumulado após o término do loop
-WRITE: / 'Total acumulado:', v_total.
-
-* Explicação:
-* - O loop DO executa 10 vezes, com sy-index variando de 1 a 10.
-* - Quando sy-index chega a 6, o EXIT encerra o loop, então só são processados índices de 1 a 5.
-* - O CONTINUE faz com que os números ímpares sejam ignorados, ou seja, só os pares (2 e 4) são somados.
-* - O resultado final será a soma de 2 + 4 = 6.
