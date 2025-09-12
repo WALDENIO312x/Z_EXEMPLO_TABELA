@@ -29,3 +29,12 @@ FORM exibir_nome USING p_nome TYPE string.
   WRITE: / 'Olá,', p_nome.
 ENDFORM.
 
+*---------------------------------------------------------------------*
+* Sub-rotina para exibir nome completo
+*---------------------------------------------------------------------*
+FORM exibir_nome_completo USING p_nome TYPE string
+                       p_sobrenome TYPE string.
+  " Exibe o nome completo
+  WRITE: / 'Nome completo:', p_nome, p_sobrenome.
+ENDFORM.
+
