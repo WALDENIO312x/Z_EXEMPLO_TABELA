@@ -12,3 +12,12 @@ START-OF-SELECTION.
   gv_sobrenome = 'Menezes'.
   gv_idade     = 26.
 
+  " Chama a sub-rotina para exibir o nome
+  PERFORM exibir_nome USING gv_nome.
+
+  " Chama a sub-rotina para exibir nome completo
+  PERFORM exibir_nome_completo USING gv_nome gv_sobrenome.
+
+  " Chama a sub-rotina para exibir nome e idade
+  PERFORM exibir_nome_idade USING gv_nome gv_idade.
+
