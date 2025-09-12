@@ -6,3 +6,9 @@ DATA: gv_nome     TYPE string,
     gv_sobrenome TYPE string,
     gv_idade     TYPE i.
 
+START-OF-SELECTION.
+  " Atribui valores às variáveis
+  gv_nome      = 'Waldenio'.
+  gv_sobrenome = 'Menezes'.
+  gv_idade     = 26.
+
