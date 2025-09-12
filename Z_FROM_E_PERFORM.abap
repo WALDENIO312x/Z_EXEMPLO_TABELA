@@ -21,3 +21,11 @@ START-OF-SELECTION.
   " Chama a sub-rotina para exibir nome e idade
   PERFORM exibir_nome_idade USING gv_nome gv_idade.
 
+*---------------------------------------------------------------------*
+* Sub-rotina para exibir apenas o nome
+*---------------------------------------------------------------------*
+FORM exibir_nome USING p_nome TYPE string.
+  " Exibe uma saudação com o nome informado
+  WRITE: / 'Olá,', p_nome.
+ENDFORM.
+
