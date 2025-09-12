@@ -38,3 +38,11 @@ FORM exibir_nome_completo USING p_nome TYPE string
   WRITE: / 'Nome completo:', p_nome, p_sobrenome.
 ENDFORM.
 
+*---------------------------------------------------------------------*
+* Sub-rotina para exibir nome completo e idade
+*---------------------------------------------------------------------*
+FORM exibir_nome_idade USING p_nome TYPE string
+                     p_idade TYPE i.
+  " Exibe o nome completo e a idade
+  WRITE: / 'Nome:', p_nome, p_sobrenome '- Idade:', p_idade.
+ENDFORM.
