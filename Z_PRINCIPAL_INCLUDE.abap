@@ -1,5 +1,5 @@
 "-------------------------------------------------------------
-" PROGRAMA PRINCIPAL: Z_PRINCIPAL
+" PROGRAMA PRINCIPAL: Z_PRINCIPAL_INCLUDE
 " Exemplo de uso de INCLUDE para organizar e reutilizar código.
 "-------------------------------------------------------------
 * filepath: d:\src\Estudos SAP\Modulo 3\Z_PRINCIPAL.abap
