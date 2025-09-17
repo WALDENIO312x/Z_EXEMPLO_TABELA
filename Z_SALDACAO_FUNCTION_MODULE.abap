@@ -1,4 +1,4 @@
-FUNCTION Z_SAUDACAO.
+FUNCTION Z_SAUDACAO_function_module.
 *"----------------------------------------------------------------------
 *" IMPORTING
 *"     VALUE(NOME) TYPE STRING
